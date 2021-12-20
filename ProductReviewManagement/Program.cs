@@ -24,7 +24,7 @@ namespace ProductReviewManagement
             Management management = new Management();
             while (flag)
             {
-                Console.WriteLine("Specify the Number To Excute USE CASE Wise Problems:-- \n 1. Displaying ADD List \n 2. Exit");
+                Console.WriteLine("Specify the Number To Excute USE CASE Wise Problems:-- \n 1. Displaying ADD List \n 2. Top Three Records According to Rating \n 3. Exit");
                 int number = Convert.ToInt32(Console.ReadLine());
                 switch (number)
                 {
@@ -32,6 +32,9 @@ namespace ProductReviewManagement
                         management.Display(productList);
                         break;
                     case 2:
+                        management.TopThreeRecords(productList);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
