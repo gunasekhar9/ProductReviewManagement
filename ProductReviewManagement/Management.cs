@@ -46,6 +46,5 @@ namespace ProductReviewManagement
             var records = (from Product in productList select Product).Skip(5).ToList();
             Display(records);
         }
-        DataTable dataTable = new DataTable();
     }
 }
